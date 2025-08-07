@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "docker_instance" {
-    source = "<github-username>/docker-instance/aws"
+module "docker_inst" {
+    source = "<github-username>/docker-inst/aws"
     key_name = "your_key_name"
 }
