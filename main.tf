@@ -36,7 +36,7 @@ data "template_file" "userdata" {
 }
 
 resource "aws_instance" "tfmyec2" {
-  ami = data.aws_ami.amazon-linux-2.id
+  ami = data.aws_ami.amazon-linux-2023.id
   instance_type = var.instance_type
   count = var.num_of_instance
   key_name = var.key_name
